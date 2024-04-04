@@ -1,27 +1,33 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 
 
-public class login {
-
-
-
-    @Test
-    void method1() throws InterruptedException {
-        WebDriver driver3 = new ChromeDriver();
-        driver3.manage().window().maximize();
-        driver3.quit();
-    }
+public class login extends setup
+{
 
     @Test
-    void method2() throws InterruptedException {
-        System.out.println("method 2");
-    }
-    @Test
-    void method3() throws InterruptedException {
-        System.out.println("method 3");
+    void login_site(){
+
+        driver.get("https://www.reddit.com/");
+        driver.manage().window().maximize();
+
+        driver.findElement(By.xpath("//*[@id=\'login-button\']")).click();
+        WebElement username = driver.findElement(By.xpath("/html/body/shreddit-app/shreddit-overlay-display/span[4]/input"));
+        WebElement password = driver.findElement(By.xpath("/html/body/shreddit-app/shreddit-overlay-display/span[5]/input"));
+
+
+        username.sendKeys("General_Baby24");
+        password.sendKeys("Testfinal24@");
+        password.sendKeys(Keys.ENTER);
+
+
     }
 
 
 }
+
