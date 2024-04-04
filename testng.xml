@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/leema/OneDrive/Documents/CEN 4072 - CRN 15618 - Software Testing/maven_testing/pom.xml">
+        <classes>
+                <class name="user_signup_login">
+                </class>
+                <class name="test_2">
+                </class>
+        </classes>
+    </test>
+</suite>
+
