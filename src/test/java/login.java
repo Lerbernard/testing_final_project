@@ -10,7 +10,6 @@ public class login {
     @Test
     void method1() throws InterruptedException {
         WebDriver driver3 = new ChromeDriver();
-        driver3.get("https://mangaclash.com/manga/isekai-teni-shite-kyoushi-ni-natta-ga-majo-to-osorerareteiru-ken-aoi-sensei-no-gakuen-funtou-nisshi/");
         driver3.manage().window().maximize();
         driver3.quit();
     }
