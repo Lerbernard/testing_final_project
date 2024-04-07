@@ -8,7 +8,6 @@ public  class setup
     public setup()
     {
         driver = new ChromeDriver();
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
     }
     public WebDriver getdriver()
     {
