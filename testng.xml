@@ -4,9 +4,10 @@
     <test verbose="2" preserve-order="true"
           name="C:/Users/leema/OneDrive/Documents/CEN 4072 - CRN 15618 - Software Testing/maven_testing/pom.xml">
         <classes>
-                <class name="login">
-                </class>
-
+            <class name="login">
+            </class>
+            <class name="create_post">
+            </class>
         </classes>
     </test>
 </suite>
