@@ -3,6 +3,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class create_post extends setup_login {
     public String url;
 
@@ -48,11 +52,16 @@ public class create_post extends setup_login {
         driver.findElement(By.xpath("//*[@id=\'AppRouter-main-content\']/div/div/div[2]/div[3]/div[1]/div[2]/div[3]/div[1]/div/button[2]")).click();
 
         driver.findElement(By.xpath("//*[@id=\'AppRouter-main-content\']/div/div/div[2]/div[3]/div[1]/div[2]/div[3]/div[2]/div[1]/div/textarea")).sendKeys("test");
-        WebElement image =  driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div[3]/div[1]/div[2]/div[3]/div[2]/div[2]/div/div/input"));
-        image.sendKeys("C:\\Users\\leema\\OneDrive\\Documents\\CEN 4072 - CRN 15618 - Software Testing\\maven_testing\\src\\main\\resources\\test_image.gif");
+        WebElement upload =  driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[2]/div[3]/div[1]/div[2]/div[3]/div[2]/div[2]/div/div/input"));
+
+        Path path = Paths.get("test_image.png");
+        String file_path = path.toAbsolutePath().toString();
+        String file_path_2 = file_path.replace("test_image.png", "");
+        String source = "src\\main\\resources\\test_image.png";
 
 
 
+        upload.sendKeys(file_path_2 + source );
 
         driver.findElement(By.xpath("//*[@id='AppRouter-main-content']/div/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/input")).sendKeys("u/General_Baby24");
         driver.findElement(By.xpath("//*[@id='AppRouter-main-content']/div/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/input")).sendKeys(Keys.ENTER);
