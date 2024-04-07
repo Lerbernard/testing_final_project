@@ -59,9 +59,7 @@ public class create_post extends setup_login {
         String file_path_2 = file_path.replace("test_image.png", "");
         String source = "src\\main\\resources\\test_image.png";
 
-
-
-        upload.sendKeys(file_path_2 + source );
+        upload.sendKeys(file_path_2 + source);
 
         driver.findElement(By.xpath("//*[@id='AppRouter-main-content']/div/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/input")).sendKeys("u/General_Baby24");
         driver.findElement(By.xpath("//*[@id='AppRouter-main-content']/div/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/input")).sendKeys(Keys.ENTER);
