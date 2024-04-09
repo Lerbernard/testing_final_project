@@ -6,8 +6,6 @@ import org.testng.annotations.Test;
 public class setup_login extends setup {
 
     void login_site() throws InterruptedException {
-
-
         driver.get("https://www.reddit.com/");
         driver.manage().window().maximize();
 

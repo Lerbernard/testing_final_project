@@ -7,13 +7,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class create_post extends setup_login {
-
+    public String url;
 
     @BeforeClass
     void login() throws InterruptedException {
         login_site();
 
-
+        url = driver.getCurrentUrl();
+        Thread.sleep(3000);
     }
 
     @AfterClass
