@@ -4,10 +4,12 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class setup_login extends setup {
-    void login_site() throws InterruptedException {
 
+    void login_site() throws InterruptedException {
         driver.get("https://www.reddit.com/");
         driver.manage().window().maximize();
+
+        Thread.sleep(5000);
 
         driver.findElement(By.xpath("//*[@id=\'login-button\']")).click();
         Thread.sleep(5000);

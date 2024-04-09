@@ -6,11 +6,15 @@
         <classes>
             <class name="login">
             </class>
-                <class name="post_func">
-                </class>
-                    <class name="create_post">
-                    </class>
+            <class name="home_page">
+            </class>
+            <class name="post_func">
+            </class>
+            <class name="create_post">
+            </class>
+
         </classes>
+
     </test>
 </suite>
 

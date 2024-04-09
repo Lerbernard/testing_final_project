@@ -20,7 +20,7 @@ public class home_page extends setup_login{
 
     @AfterClass
     void close_driver(){
-        //driver.quit();
+        driver.quit();
     }
 
     @Test(priority = 2)
