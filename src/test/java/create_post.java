@@ -18,6 +18,7 @@ public class create_post extends setup_login {
         Thread.sleep(3000);
     }
     @AfterClass
+
     void close_driver(){ 
         driver.quit();
     }
@@ -76,6 +77,8 @@ public class create_post extends setup_login {
         Thread.sleep(2000);
 
         upload.sendKeys(file_path_2 + source);
+
+
 
         driver.findElement(By.xpath("//*[@id='AppRouter-main-content']/div/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/input")).sendKeys("u/General_Baby24");
         driver.findElement(By.xpath("//*[@id='AppRouter-main-content']/div/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/input")).sendKeys(Keys.ENTER);
