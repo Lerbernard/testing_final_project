@@ -6,8 +6,10 @@
         <classes>
             <class name="login">
             </class>
-            <class name="create_post">
-            </class>
+                <class name="post_func">
+                </class>
+                    <class name="create_post">
+                    </class>
         </classes>
     </test>
 </suite>
