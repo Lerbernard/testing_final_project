@@ -8,20 +8,6 @@ import org.testng.annotations.Test;
 
 public class post_func extends setup_login {
 
-    public String url;
-
-    @BeforeClass
-    void  login() throws InterruptedException {
-        login_site();
-
-        url = driver.getCurrentUrl();
-        Thread.sleep(3000);
-    }
-    @AfterClass
-    void close_driver(){
-        driver.quit();
-    }
-
 
     @Test (priority = 1)
     void upvote_and_downVote() throws InterruptedException {
