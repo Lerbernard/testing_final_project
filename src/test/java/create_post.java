@@ -8,6 +8,20 @@ import java.nio.file.Paths;
 
 public class create_post extends setup_login {
 
+
+    @BeforeClass
+    void login() throws InterruptedException {
+        login_site();
+
+
+    }
+
+    @AfterClass
+    void close_driver() {
+        driver.quit();
+    }
+
+
     @Test
     void create_a_post_with_text() throws InterruptedException {
         driver.get(url);

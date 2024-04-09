@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class setup_login extends setup {
-    public String url;
 
     void login_site() throws InterruptedException {
 

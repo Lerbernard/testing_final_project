@@ -8,6 +8,21 @@ import org.testng.annotations.Test;
 
 public class home_page extends setup_login{
 
+    public String url;
+
+    @BeforeClass
+    void  login() throws InterruptedException {
+        login_site();
+
+        url = driver.getCurrentUrl();
+        Thread.sleep(3000);
+    }
+
+    @AfterClass
+    void close_driver(){
+        driver.quit();
+    }
+
     @Test(priority = 2)
     void test_sort() throws InterruptedException {
 
