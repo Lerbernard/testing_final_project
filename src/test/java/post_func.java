@@ -17,13 +17,10 @@ public class post_func extends setup_login {
         url = driver.getCurrentUrl();
         Thread.sleep(3000);
     }
-    @AfterClass
-    void close_driver(){
-        driver.quit();
-    }
 
 
-    @Test (priority = 1)
+
+    @Test
     void upvote_and_downVote() throws InterruptedException {
         driver.get(url);
         Thread.sleep(3000);
@@ -50,7 +47,7 @@ public class post_func extends setup_login {
         Actions down_vote2 = new Actions(driver);
         down_vote2.moveToLocation(781, 763).click().build().perform();
     }
-    @Test (priority = 2)
+    @Test
     void comment() throws InterruptedException {
         driver.get(url);
         Thread.sleep(3000);
@@ -93,7 +90,7 @@ public class post_func extends setup_login {
 
     }
 
-    @Test (priority = 3)
+    @Test
     void  navigate_picture() throws InterruptedException {
         driver.get(url);
         Thread.sleep(3000);
@@ -127,7 +124,7 @@ public class post_func extends setup_login {
 
     }
 
-    @Test (priority = 4)
+    @Test
     void share_and_user_link_and_community() throws InterruptedException {
 
         driver.get(url);
@@ -168,7 +165,7 @@ public class post_func extends setup_login {
 
     }
 
-    @Test (priority = 5)
+    @Test
     void other_functionality() throws InterruptedException {
 
         driver.get(url);
@@ -253,6 +250,10 @@ public class post_func extends setup_login {
 
 
 
+    }
+    @AfterClass
+    void close_driver(){
+        driver.quit();
     }
 
 
