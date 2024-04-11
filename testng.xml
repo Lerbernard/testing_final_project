@@ -10,8 +10,15 @@
             </class>
             <class name="post_func">
             </class>
+            <class name="subreddit_page">
+            </class>
+            <class name="user_page">
+            </class>
+            <class name="search">
+            </class>
             <class name="create_post">
             </class>
+
 
         </classes>
 
