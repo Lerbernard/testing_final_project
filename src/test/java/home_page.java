@@ -18,12 +18,8 @@ public class home_page extends setup_login{
         Thread.sleep(3000);
     }
 
-    @AfterClass
-    void close_driver(){
-        driver.quit();
-    }
 
-    @Test(priority = 2)
+    @Test
     void test_sort() throws InterruptedException {
 
         Actions action = new Actions(driver);
@@ -60,7 +56,7 @@ public class home_page extends setup_login{
 
 
 
-    @Test(priority = 1)
+    @Test
     void click_sidebar() throws InterruptedException {
         driver.get(url);
         Thread.sleep(3000);
@@ -164,5 +160,9 @@ public class home_page extends setup_login{
 
     }
 
+    @AfterClass
+    void close_driver(){
+        driver.quit();
+    }
 
 }

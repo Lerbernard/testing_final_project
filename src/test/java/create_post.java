@@ -17,12 +17,6 @@ public class create_post extends setup_login {
         Thread.sleep(3000);
     }
 
-    @AfterClass
-    void close_driver() {
-        driver.quit();
-    }
-
-
     @Test
     void create_a_post_with_text() throws InterruptedException {
         driver.get(url);
@@ -202,5 +196,10 @@ public class create_post extends setup_login {
         driver.findElement(By.xpath("//*[@id=\'AppRouter-main-content\']/div/div/div[2]/div[3]/div[1]/div[2]/div[3]/div[3]/div[1]/div/button[2]/div")).click();
         Thread.sleep(1000);
 
+    }
+
+    @AfterClass
+    void close_driver() {
+        driver.quit();
     }
 }

@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" >
     <test verbose="2" preserve-order="true"
           name="C:/Users/leema/OneDrive/Documents/CEN 4072 - CRN 15618 - Software Testing/maven_testing/pom.xml">
         <classes>
-            <class name="login">
-            </class>
-            <class name="home_page">
-            </class>
-            <class name="post_func">
-            </class>
-            <class name="subreddit_page">
-            </class>
-            <class name="user_page">
-            </class>
-            <class name="search">
-            </class>
-            <class name="create_post">
-            </class>
-
-
+            <class name="login" />
+            <class name="home_page"/>
+            <class name="post_func"/>
+            <class name="subreddit_page"/>
+            <class name="user_page"/>
+            <class name="search"/>
+            <class name="create_post"/>
         </classes>
-
     </test>
 </suite>
 

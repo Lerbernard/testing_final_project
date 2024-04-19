@@ -1,11 +1,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 
-public class setup_login extends setup {
 
+public class setup_login{
+    public WebDriver driver;
     void login_site() throws InterruptedException {
+
+        driver = new ChromeDriver();
         driver.get("https://www.reddit.com/");
         driver.manage().window().maximize();
 
